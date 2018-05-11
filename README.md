@@ -1,6 +1,6 @@
 # Crimes & Punishments: The Federal Criminal App 
 
-## H2 An Interactive Visualization Tool for Federal Offender & Sentencing Data 
+## An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
 
 This python app gives people insight into the nature of the people and kinds of crimes tried in the Southern District of New York, the high profile federal court whose prosecutors have gone on to become mayors, governors, Supreme Court justices and even Nobel laureates. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention trying mobster bosses like Gambino and Gotti.  The Fed Criminals App allows users to choose two crime types from 32 options in drop menues, and then compare the age and number of dependents of offenders on the selected crimes. If you hover over any dot on the chart, you see three pieces of data: tk tk and tk. Some results: gamblers don't tend to have kids, whereas tk do; drug traffickers tk and tk. 
@@ -20,11 +20,11 @@ In order to use these apps yourself, please clone this repository and then run C
  Another stage of this project will allow comparison of Southern District data with other districts like the Eastern District of NY through a slider function; and yet another version will compare stats in the Southern District over time, specificallt for the past 16 years (for the current app, the dataset is 2015 sentences). In the future I also plan to embed this tool, and others, in a website.  
 
 
-###H3 BACKGROUND 
+### BACKGROUND 
 
 The Federal Courts handle between 75,000 and 105,000 cases a year. That's a relatively small number: there are more than 8 million state property crimes alone every year. Federal cases tend to be of larger significance. The Constitution or federal law has been violated, the US is a party, federal land is involved or state lines have been crossed. Federal proescutors select the cases. The most common offenses: drug trafficking, immigration, firearms and fraud. 
 
-###H3 Some famous Southern District of NY Cases:
+### Some famous Southern District of NY Cases:
 
 - Injury and loss of life claims from sinking of the Titanic
 - Espionage trial of Julius and Ethel Rosenberg  
@@ -42,7 +42,7 @@ And more recently, Trump's lawyer Michael Cohen, and the Deflategate controversy
 
 IMAGE01-Cohen&CO 
 
-###H3 Problem to Solve
+### Problem to Solve
 
 Although federal crimes are of great public interest and are often covered in the press, it is hard to access and manipulate all the data on them that the United States Federal Sentencing Commission (USSC) collects. Thus the larger trends are harder to see. While the data files are available on the USSC website, they are very hard to access unless you have spss, and even then these are enormous files that require a lot of computing firepower to examine. Yet the vast range and scope of the data would make data visualization tools and statistical analysis especially useful. 
 
@@ -52,7 +52,7 @@ As a prototype for this larger project, I have started out by focusing on one of
 The Southern District of NY wprobably the best known one. Top lawyers have used it as a stepping stone to become mayor, governor and Supreme Court Justices. Famous alums include tktktkt t t t tkttktkktktkt .   famous cases are tried here .... Michael Cohen, tktktktktktktk. 
 
 
-###H3 PROCESS 
+### PROCESS 
 
 I began by downloading 16 pairs of dat and spss files (32 total files) that covered 16 years of federal sentencing data from the USSC website, separated into the variable headings and the actual data. I opened the files in spss, a statistical software program, which I used to combine the pairs into a total of 16 complete sav files for each year. In order to manipulate this data in python, I had to convert the sav files into csv format. While there does not appear to be a straightforward way to do this in Python, a library in R came to the rescue. Here's the R code I used:  
 
@@ -65,7 +65,7 @@ write.csv(dataset1, file='/home/dsetton/dataset1.csv')```
 However, these datasets were so enormous -- 2017 alone is 3.8GB -- that opening just one crashed my Excel and was taking forever to load in Jupyter Notebooks. I was able to download another year in csv format from a University of Michigan website. This file was 1.8 gigabytes. However as I examined the data in Pandas, I discovered that many variables listed in the Codebook were mysteriously missing. Eventually I realized that the University of Michigan had split these behemoths into two mini-behemoths. 
 
 
-DATA PREP 
+### DATA PREP 
 
 I worked in a Jupyter Notebook to subset the data, rename columns and do data exploration using toyplots and pandas 
 
@@ -81,7 +81,7 @@ When I checked the datatypes, I found that python had read in a few as int64 and
 
 ```
 
-###H3DATA EXPLORATION
+### DATA EXPLORATION
 
 I ran a dash Table, but I decided I preferred to look over my data in Excel. 
 
@@ -92,7 +92,7 @@ Images: Toypplot
 Histograms of age, race, etc. 
 
 
-###H3REFLECTIONS 
+### REFLECTIONS 
 
 Through this project, I became more familiar with Numpy and Pandas, different data formats (sav, spss, txt, ASCII, etc), and how to prepare and clean data. That was the first half of the project. The second half involved teaching myself how to use DASH, which I found to be an espcially exciting and interactive way of presenting data that also has the advantage of incorporating stylistic features from html and css. Because DASH isn't integrated with Jupyter Notebooks, I wrote the code in Sublime and tested in a local host, which was not as smooth a workflow. Right now that is the downside of DASH. 
 
