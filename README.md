@@ -1,6 +1,6 @@
-#Crimes & Punishments: The Federal Criminal App 
+# Crimes & Punishments: The Federal Criminal App 
 
-##H2 An Interactive Visualization Tool for Federal Offender & Sentencing Data 
+## H2 An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
 
 This python app gives people insight into the nature of the people and kinds of crimes tried in the Southern District of New York, the high profile federal court whose prosecutors have gone on to become mayors, governors, Supreme Court justices and even Nobel laureates. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention trying mobster bosses like Gambino and Gotti.  The Fed Criminals App allows users to choose two crime types from 32 options in drop menues, and then compare the age and number of dependents of offenders on the selected crimes. If you hover over any dot on the chart, you see three pieces of data: tk tk and tk. Some results: gamblers don't tend to have kids, whereas tk do; drug traffickers tk and tk. 
