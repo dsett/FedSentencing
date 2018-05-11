@@ -5,7 +5,7 @@
 
 This python app gives people insight into the nature of the people and kinds of crimes tried in the Southern District of New York, the high profile federal court whose prosecutors have gone on to become mayors, governors, Supreme Court justices and even Nobel laureates. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention trying mobster bosses like Gambino and Gotti.  The Fed Criminals App allows users to choose two crime types from 32 options in drop menues, and then compare the age and number of dependents of offenders on the selected crimes. If you hover over any dot on the chart, you see three pieces of data: tk tk and tk. Some results: gamblers don't tend to have kids, whereas tk do; drug traffickers tk and tk. 
 
-TK LOOKS LIKE THIS
+![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Chart2.png)
 
 
 A second chart uses the dimension of color as well as an x and y axis and a hover function . This time, the colors show aht. 
@@ -67,11 +67,12 @@ However, these datasets were so enormous -- 2017 alone is 3.8GB -- that opening 
 
 ### DATA PREP 
 
-I worked in a Jupyter Notebook to subset the data, rename columns and do data exploration using toyplots and pandas 
+I worked in a Jupyter Notebook to subset the data, rename columns and clean the data: 
 
-image: how the dataset was created through pulling columns from both
+![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Col1Code.png)
+![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Col2Code.png)
 
-Image: renaming columns
+![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/RenameCode.png)
 
 
 When I checked the datatypes, I found that python had read in a few as int64 and the rest as objects, even though the Codebook said the data was numeric. I realized I had to get rid of the blanks in the data, which I did using vim on the terminal, with the following command that replaced all spaces with a -999 (the g stands for global): 
@@ -83,9 +84,13 @@ When I checked the datatypes, I found that python had read in a few as int64 and
 
 I ran a dash Table, but I decided I preferred to look over my data in Excel. 
 
-Image: Dash Table 
+Imagetk : Dash Table 
 
-Images: Toypplot 
+Then I did some data exploration in Jupyter, using toyplots and pandas. For example: 
+
+![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Age.png)
+
+![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Dependents.png)
 
 Histograms of age, race, etc. 
 
