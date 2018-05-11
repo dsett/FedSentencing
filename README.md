@@ -56,11 +56,11 @@ The Southern District of NY wprobably the best known one. Top lawyers have used 
 
 I began by downloading 16 pairs of dat and spss files (32 total files) that covered 16 years of federal sentencing data from the USSC website, separated into the variable headings and the actual data. I opened the files in spss, a statistical software program, which I used to combine the pairs into a total of 16 complete sav files for each year. In order to manipulate this data in python, I had to convert the sav files into csv format. While there does not appear to be a straightforward way to do this in Python, a library in R came to the rescue. Here's the R code I used:  
 
-install.packages('foreign') library(foreign)
+```install.packages('foreign') library(foreign)
 
 dataset1 = read.spss('/path/to/file.sav', to.data.frame=TRUE)
 
-write.csv(dataset1, file='/home/dsetton/dataset1.csv')
+write.csv(dataset1, file='/home/dsetton/dataset1.csv')```
 
 However, these datasets were so enormous -- 2017 alone is 3.8GB -- that opening just one crashed my Excel and was taking forever to load in Jupyter Notebooks. I was able to download another year in csv format from a University of Michigan website. This file was 1.8 gigabytes. However as I examined the data in Pandas, I discovered that many variables listed in the Codebook were mysteriously missing. Eventually I realized that the University of Michigan had split these behemoths into two mini-behemoths. 
 
