@@ -15,9 +15,9 @@ app.layout = html.Div([
         figure={
             'data': [
                 go.Scatter(
-                    x=df[df['BOOKER3'] == i]['BOOKER3'],
-                    y=df[df['BOOKER3'] == i]['SentenceMonths'],
-                    text=df[df['BOOKER3'] == i]['CRIMHIST'],
+                    x=df[df['BOOKER2'] == i]['SentenceMonths'],
+                    y=df[df['BOOKER2'] == i]['CRIMHIST'],
+                    text=df[df['BOOKER2'] == i]['BOOKER2'],
                     mode='markers',
                     opacity=0.7,
                     marker={
