@@ -29,7 +29,7 @@ Criminal History:
 
 As you can see from the chart, most judges in the Southern District set sentences within the guideline range (green). The dots skew to the top of the chart because the missing fields were coded as -999s. After removal:
 
-[Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/GuidelinesChart2.png)
+[Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Guidelines2.png)
 
 To see this second Guidelines related visualization, type "python Chart2.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
 
