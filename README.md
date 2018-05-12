@@ -20,7 +20,7 @@ Some results: gamblers don't tend to have kids, whereas racketeers do. The numbe
 
 One might also pair up white collar crime vs blue collar crime, etc. 
 
-In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser.   
+In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/OffenseChart.py")
 
 A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. So here three pieces of data are grouped together: whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
 
@@ -38,9 +38,9 @@ Criminal History:
 
 As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
 
-To see this second Guidelines related visualization, type "python Chart2.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
+To see this second Guidelines related visualization, type "python Guidelines.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
 
-A quick numpy max function, ```test["SentenceMonths"].max()``` tells us at the maximum sentence is 1320 months, or 110 years.  
+A quick numpy max function, ```test["SentenceMonths"].max()``` tells us that the maximum sentence is 1320 months, or 110 years. Interactive histograms would also be helpful here, a future addition to come. 
 
 
 ### BACKGROUND 
