@@ -10,7 +10,9 @@ The Fed Criminals App allows users to choose two crime types from 32 options in 
 
 Some results: gamblers don't tend to have kids, whereas racketeers do. The number and spread of the dots also quickly gives you a visual picture of how prevalent a certain offense is in the Southern District. The darker the dot, the greater the number of a particular confluence of age and dependents. 
 
-In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser. You will see something that looks like the image above.  
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Embezz.png)
+
+In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser.   
 
 A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. So here three pieces of data are grouped together: whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
 
