@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 
 app = dash.Dash()
 
-df = pd.read_csv('/Users/DSetton/Desktop/NYSouthernDistrictData.csv')
+df = pd.read_csv('/Users/DSetton/Documents/FedSentencing/Data/NYSouthernDistrictData.csv')
 
 available_indicators = df['Offense'].unique()
 
@@ -70,11 +70,11 @@ def update_graph(xaxis_column_name, yaxis_column_name,
         )],
         'layout': go.Layout(
             xaxis={
-                'title': xaxis_column_name+"   (AGE)",
+                'title': xaxis_column_name+"   (AGE = x axis)",
                 'type': 'linear' if xaxis_type == 'Linear' else 'log'
             },
             yaxis={
-                'title': yaxis_column_name+"   (# Dependents)",
+                'title': yaxis_column_name+"   (# Dependents = y axis)",
                 'type': 'linear' if yaxis_type == 'Linear' else 'log'
             },
             margin={'l': 40, 'b': 40, 't': 10, 'r': 0},

@@ -13,11 +13,20 @@ Some results: gamblers don't tend to have kids, whereas racketeers do. The numbe
 
 In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser. You will see something that looks like the image above.  
 
-A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. The 0 on the horizontal axis indicates that a sentence is within the recommended sentencing guidelines set up by Congress in 1994. If the dot is above that 0 it means that the sentence is higher, and below means the sentence is lower. As you can see from the chart, most judges in the Southern District set sentences within the guideline range; the higher the sentence the more likely it is to be outside that range. 
+A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. The 0 on the horizontal axis indicates that a sentence is within the recommended sentencing guidelines set up by Congress in 1994. 
+
+0= Within Range (the judge imposed a sentence within the range recommended by the guidelines)
+1= Above Departure (the judge imposed a sentence higher than the top of the range recommended by the guidelines)
+2= Government Sponsored (The prosecutor recommended a sentence outside the guidelines)
+3= Below Range (the judge imposed a sentence lower than the minimum recommended by the guidelines)
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Chart2.png)
+
+As you can see from the chart, most judges in the Southern District set sentences within the guideline range.
+And the higher the sentence the more likely it is to be outside that range. 
 
 To see this second visualization, type "python Chart2.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  Then you should see something like this: 
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Chart2.png)
 
 Hover over the dots for more case-specific information. 
 

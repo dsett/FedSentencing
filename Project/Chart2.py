@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 
 app = dash.Dash()
 
-df = pd.read_csv('../Users/DSetton/Documents/FedSentencing/Data/NYSouthernDistrictData.csv')
+df = pd.read_csv('/Users/DSetton/Documents/FedSentencing/Data/NYSouthernDistrictData.csv')
 
 app.layout = html.Div([
     
@@ -15,9 +15,9 @@ app.layout = html.Div([
         figure={
             'data': [
                 go.Scatter(
-                    x=df[df['BOOKER3'] == i]['SentenceMonths'],
-                    y=df[df['BOOKER3'] == i]['SentenceMonths'],
-                    text=df[df['BOOKER3'] == i]['BOOKER3'],
+                    x=df[df['BOOKER2'] == i]['SentenceMonths'],
+                    y=df[df['BOOKER2'] == i]['SentenceMonths'],
+                    text=df[df['BOOKER2'] == i]['BOOKER2'],
                     mode='markers',
                     opacity=0.7,
                     marker={
@@ -28,8 +28,8 @@ app.layout = html.Div([
                 ) for i in df.BOOKER3.unique()
             ],
             'layout': go.Layout(
-                xaxis={'type': 'log', 'title': 'Sentence'},
-                yaxis={'title': 'Booker'},
+                xaxis={'type': 'log', 'title': 'Sentence in Months'},
+                yaxis={'title': '0 = Within range, 1= below range, 3 = above range'},
                 margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
                 legend={'x': 0, 'y': 1},
                 hovermode='closest'
