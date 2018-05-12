@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 
 app = dash.Dash()
 
-df = pd.read_csv('/Users/DSetton/Documents/FedSentencing/Data/NYSouthernDistrictData.csv')
+df = pd.read_csv('..Data/NYSouthernDistrictData.csv')
 
 available_indicators = df['Offense'].unique()
 
