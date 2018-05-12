@@ -47,8 +47,6 @@ A quick numpy max function, ```test["SentenceMonths"].max()``` tells us that the
 
 The Federal Courts handle between 75,000 and 105,000 cases a year. That's a relatively small number: there are more than 8 million state property crimes alone every year. Federal cases tend to be of larger significance. The Constitution or federal law has been violated, the US is a party, federal land is involved or state lines have been crossed. Federal proescutors select the cases. The most common offenses: drug trafficking, immigration, firearms and fraud. 
 
-SDNY prosecutors often maintain a high profile, and have gone on to become governors, Supreme Court justices and even Nobel laureates. Notable alums include Rudolph Guliani and Mary Jo White. 
-
 ### Some famous Southern District of NY Cases:
 
 - Injury and loss of life claims from sinking of the Titanic
