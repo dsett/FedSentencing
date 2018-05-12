@@ -7,26 +7,31 @@ The Fed Criminals App offers insight into larger trends and patterns in the peop
 
 The Fed Criminals App allows users to choose two crime types from 32 options in drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Use the arrows on your keyboard to scroll through the offense options in the drop down menus. Say you pick Firearms and Racketeering/Exortion. If you hover over any dot on the chart, you will see two numbers in parentheses followed by another number, such as this: ```(30, 4) 3.``` In this case that would mean that there are 3 offenders who are 30 year old and have 4 dependents. 
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Chart3.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/OffenseChart.png)
 
 Some results: gamblers don't tend to have kids, whereas racketeers do. The number and spread of the dots also quickly gives you a visual picture of how prevalent a certain offense is in the Southern District. The darker the dot, the greater the number of a particular confluence of age and dependents. 
 
 In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser. You will see something that looks like the image above.  
 
-A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. The 0 on the horizontal axis indicates that a sentence is within the recommended sentencing guidelines set up by Congress in 1994. 
+A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. So here three pieces of data are grouped together: whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
 
-0= Within Range (the judge imposed a sentence within the range recommended by the guidelines)
-1= Above Departure (the judge imposed a sentence higher than the top of the range recommended by the guidelines)
-2= Government Sponsored (The prosecutor recommended a sentence outside the guidelines)
-3= Below Range (the judge imposed a sentence lower than the minimum recommended by the guidelines)
+Relation to Guidelines:
+- 0= Within Range (the judge imposed a sentence within the range recommended by the guidelines)
+- 1= Above Departure (the judge imposed a sentence higher than the top of the range recommended by the guidelines)
+- 2= Government Sponsored (The prosecutor recommended a sentence outside the guidelines)
+- 3= Below Range (the judge imposed a sentence lower than the minimum recommended by the guidelines)
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Chart2.png)
+Criminal History: 
+- 0 = No Criminal History
+- 1 = Yes, There is Criminal History
 
-As you can see from the chart, most judges in the Southern District set sentences within the guideline range.
-And the higher the sentence the more likely it is to be outside that range. 
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/GuidelinesChart.png)
 
-To see this second visualization, type "python Chart2.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  Then you should see something like this: 
+As you can see from the chart, most judges in the Southern District set sentences within the guideline range (green). The dots skew to the top of the chart because the missing fields were coded as -999s. After removal:
 
+[Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/GuidelinesChart2.png)
+
+To see this second Guidelines related visualization, type "python Chart2.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
 
 Hover over the dots for more case-specific information. 
 
@@ -101,6 +106,10 @@ Then I did some data exploration in Jupyter, using toyplots and pandas. For exam
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Age.png)
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dependents.png)
+
+### DASH 
+
+The next step was to learn DASH, testing back and forth to see what different lines in their model examples accomplished. Part of the trick was to learn how to bind my data to examples where they made up the data in the example, or relied on a different format. Underneath certain functions, one had to infer that loops were being run in python under the hood. 
 
 
 ### REFLECTIONS 
