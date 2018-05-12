@@ -2,7 +2,6 @@
 
 ## An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
-
 The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mobster cases. SDNY prosecutors often maintain a high profile, and have gone on to become governors, Supreme Court justices and even Nobel laureates; famous alums include Rudolph Guliani and Mary Jo White.   
 
 The Fed Criminals App allows users to choose two crime types from 32 options in drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Use the arrows on your keyboard to scroll through the offense options in the drop down menus. Say you pick Firearms and Racketeering/Exortion. If you hover over any dot on the chart, you will see two numbers in parentheses followed by another number, such as this: ```(30, 4) 3.``` In this case that would mean that there are 3 offenders who are 30 year old and have 4 dependents. 
@@ -27,13 +26,11 @@ Criminal History:
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Guidelines2.png)
 
-As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). 
+As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
 
 To see this second Guidelines related visualization, type "python Chart2.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
 
-Hover over the dots for more case-specific information. 
-
-A future stage of this project will allow comparison of Southern District data with other districts such as the Eastern District of NY through a slider function; and yet another version will compare stats in the Southern District over time, specifically for the past 16 years (for the current app, the dataset is 2015 sentences). In the future I also plan to embed this tool, and others, in a website.  
+A quick numpy max function, ```test["SentenceMonths"].max()``` tells us at the maximum sentence is 1320 months, or 110 years.  
 
 
 ### BACKGROUND 
@@ -82,24 +79,29 @@ However, these datasets were so enormous -- 2017 alone is 3.8GB -- that opening 
 
 ### Data Prep
 
-I worked in a Jupyter Notebook to subset the data, rename columns and clean the data: 
+I worked in a Jupyter Notebook to combine the two datafiles:   
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col1Code.png)
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col2Code.png)
 
+Then I renamed some of the variables to make them more user friendly:
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/RenameCode.png)
 
 
 When I checked the datatypes, I found that python had read in a few as int64 and the rest as objects, even though the Codebook said the data was numeric. I realized I had to get rid of the blanks in the data, which I did using vim on the terminal, with the following command that replaced all spaces with a -999 (the g stands for global): 
 
-
 ```:%s/ /-999/g```
+
+And I subsetted the data to just focus on the Southern District of NY:
+ ```(df.loc[df['CIRCDIST'] == 8]).to_csv("/Users/DSetton/Desktop/NYSouthernDistrictData.csv",index=False)```
+
+ I also used the key from the codebook to type in the labels for all the offenses. 
 
 ### Data Exploration
 
 I first made a table of data using DASH, but I decided I preferred to look over my data in Excel, referencing the Codebook when needed. 
 
-Then I did some data exploration in Jupyter, using toyplots and pandas. For example, these histograms: 
+Then I did some data exploration in Jupyter, using toyplots and pandas. For example, I made these histograms: 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Age.png)
 
@@ -110,11 +112,16 @@ Then I did some data exploration in Jupyter, using toyplots and pandas. For exam
 The next step was to learn DASH, testing back and forth to see what different lines in their model examples accomplished. Part of the trick was to learn how to bind my data to examples where they made up the data in the example, or relied on a different format. Underneath certain functions, one had to infer that loops were being run in python under the hood. 
 
 
-### REFLECTIONS 
+### REFLECTIONS & FUTURE DIRECTIONS
 
-Through this project, I became more familiar with Numpy and Pandas, different data formats (sav, spss, txt, ASCII, etc), and how to prepare and clean data. That was the first half of the project. The second half involved teaching myself how to use DASH, which I found to be an espcially exciting and interactive way of presenting data that also has the advantage of incorporating stylistic features from html and css. Because DASH isn't integrated with Jupyter Notebooks, I wrote the code in Sublime and tested in a local host, which was not as smooth a workflow. Right now that is the downside of DASH. 
+I found DASH to be an especially exciting and interactive way of presenting data that also has the advantage of incorporating stylistic features from html and css. Because DASH isn't integrated with Jupyter Notebooks, I wrote the code in Sublime and tested in a local host, which was not as smooth a workflow. Right now that is the downside of DASH. 
 
-Although I have not yet gotten to that stage, from the preliminary research and working sketches I developed in Photoshop, I gained a bigger picture sense of how to fit different components together in a website. And I gained a greater appreciation of the flexibility of python, and the vast array of tools that are built with it as a base (in comparison to say R, which is more exclusively stats focused). 
+There is certainly more to explore. A future stage of this project would allow comparison of Southern District data with other districts such as the Eastern District of NY through a slider function; and yet another version would compare stats in the Southern District over time, specifically for the past 16 years (for the current app, the dataset is 2015 sentences). Many different variables can be explored. And beyond these DASH apps, I would like to create a heat map, and a visualation involving a US map. I also plan to embed the two apps in this project, and future ones, in a website. 
+
+
+
+
+
 
 
 
