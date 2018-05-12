@@ -8,9 +8,11 @@ The Fed Criminals App allows users to choose two crime types from 32 options in 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/OffenseChart.png)
 
-Some results: gamblers don't tend to have kids, whereas racketeers do. The number and spread of the dots also quickly gives you a visual picture of how prevalent a certain offense is in the Southern District. The darker the dot, the greater the number of a particular confluence of age and dependents. 
+Some results: gamblers don't tend to have kids, whereas racketeers do. The number and spread of the dots also quickly gives you a visual picture of how prevalent a certain offense is in the Southern District. The darker the dot, the greater the number of a particular confluence of age and dependents. Here is another view, this time for embezzlers and drug traffickers (there are more of them, and they tend to have fewer kids than the earlier pair). 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Embezz.png)
+
+One might also pair up white collar crime vs blue collar crime, etc. 
 
 In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser.   
 
