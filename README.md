@@ -3,11 +3,11 @@
 ## An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
 
-This python app gives people insight into the nature of the people and kinds of crimes tried in the Southern District of New York, the high profile federal court whose prosecutors have gone on to become mayors, governors, Supreme Court justices and even Nobel laureates. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention trying mobster bosses like Gambino and Gotti.  The Fed Criminals App allows users to choose two crime types from 32 options in drop menues, and then compare the age and number of dependents of offenders on the selected crimes. If you hover over any dot on the chart, you see three pieces of data: tk tk and tk. Some results: gamblers don't tend to have kids, whereas tk do; drug traffickers tk and tk. A second chart uses the dimension of color as well as an x and y axis and a hover function.
+The Fed Criminals App offers insight into larger trends about the people and kinds of crimes tried in the Southern District of New York, the high profile federal court whose prosecutors have gone on to become governors, Supreme Court justices and even Nobel laureates. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention trying mobster bosses like Gambino and Gotti.  The Fed Criminals App allows users to choose two crime types from 32 options in drop menus, and then compare the age and number of dependents of offenders on the selected crimes. If you hover over any dot on the chart, you see three pieces of data: tk tk and tk. Some results: gamblers don't tend to have kids, whereas tk do; drug traffickers tk and tk. A second chart uses the dimension of color as well as an x and y axis and a hover function.
 
 In order to use these apps yourself, please clone this repository and then run the app in the terminal with the command "python Chart3.py". Then visit http:127.0.0.1:8050/ in your web browser. Yu should see an app that looks like this.
 
-![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Chart2.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Chart2.png)
 
 For the other app, type "python Chart3.py" and then refresh your local host at the same address. 
 
@@ -64,10 +64,10 @@ However, these datasets were so enormous -- 2017 alone is 3.8GB -- that opening 
 
 I worked in a Jupyter Notebook to subset the data, rename columns and clean the data: 
 
-![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Col1Code.png)
-![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Col2Code.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col1Code.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col2Code.png)
 
-![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/RenameCode.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/RenameCode.png)
 
 
 When I checked the datatypes, I found that python had read in a few as int64 and the rest as objects, even though the Codebook said the data was numeric. I realized I had to get rid of the blanks in the data, which I did using vim on the terminal, with the following command that replaced all spaces with a -999 (the g stands for global): 
@@ -81,9 +81,9 @@ I first made a table of data using DASH, but I decided I preferred to look over 
 
 Then I did some data exploration in Jupyter, using toyplots and pandas. For example, these histograms: 
 
-![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Age.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Age.png)
 
-![Add image](https://raw.githubusercontent.com/drs22/FedSentencing/master/Images/Dependents.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dependents.png)
 
 
 ### REFLECTIONS 
