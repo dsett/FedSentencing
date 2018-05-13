@@ -38,7 +38,11 @@ Criminal History:
 
 As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
 
-To see this second Guidelines related visualization, type "python Guidelines.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
+An earlier version focused just on relation to the guidelines and the length of the sentence:
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/EarlierVersion.png)
+
+To see the Guidelines related visualization and use its interactive hover function, type "python Guidelines.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
 
 A quick numpy max function, ```test["SentenceMonths"].max()``` tells us that the maximum sentence is 1320 months, or 110 years. Interactive histograms would also be helpful here, a future addition to come. 
 

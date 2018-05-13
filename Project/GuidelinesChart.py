@@ -25,7 +25,7 @@ app.layout = html.Div([
                         'line': {'width': 0.5, 'color': 'white'}
                     },
                     name=i
-                ) for i in df.BOOKER3.unique()
+                ) for i in df.BOOKER2.unique()
             ],
             'layout': go.Layout(
                 xaxis={'type': 'log', 'title': 'Sentence'},
