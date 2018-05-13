@@ -4,7 +4,7 @@
 
 The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mobster cases. SDNY prosecutors often maintain a high profile, and have gone on to become governors, Supreme Court justices and even Nobel laureates; famous alums include Rudolph Guliani and Mary Jo White.   
 
-The Fed Criminals App allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Use the arrows on your keyboard to scroll through the offense options in the drop down menus. 
+The Fed Criminals App has several chart apps. The first allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Use the arrows on your keyboard to scroll through the offense options in the drop down menus. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dropdown.png)
 
@@ -22,7 +22,18 @@ One might also pair up white collar crime vs blue collar crime, etc.
 
 In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/OffenseChart.py")
 
-A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. So here three pieces of data are grouped together: whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
+A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/AgeMin.png)
+To see this chart app (which has a hover function), type "python AgeMinSentence.py" in terminal and go to http:127.0.0.1:8050/ in your web browser.
+
+Another version switches dependent number and age. 
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/DependMin.png)
+Type "python DependentsMinSentence.py" in terminal, then refresh your browser. 
+
+
+And two other versions relate to whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
 
 Relation to Guidelines:
 - 0= Within Range (the judge imposed a sentence within the range recommended by the guidelines)
@@ -96,7 +107,7 @@ I worked in a Jupyter Notebook to combine the two datafiles:
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col1Code.png)
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col2Code.png)
 
-I renamed some of the variables to make them more user friendly:
+Then I renamed some of the variables to make them more user friendly:
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/RenameCode.png)
 
 
