@@ -96,7 +96,7 @@ I worked in a Jupyter Notebook to combine the two datafiles:
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col1Code.png)
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Col2Code.png)
 
-Then I renamed some of the variables to make them more user friendly:
+I renamed some of the variables to make them more user friendly:
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/RenameCode.png)
 
 
