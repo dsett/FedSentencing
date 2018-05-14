@@ -2,12 +2,11 @@
 
 ## An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
-The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mobster cases. SDNY prosecutors often maintain a high profile, and have gone on to become governors, Supreme Court justices and even Nobel laureates; famous alums include Rudolph Guliani and Mary Jo White.   
+The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mobster cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. But apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about offenders and the federal crimes they commit. 
 
-The Fed Criminals App has several chart apps. The first allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Use the arrows on your keyboard to scroll through the offense options in the drop down menus. 
+The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible way. The first allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard allow users to scroll through the offense options in the drop down menus. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dropdown.png)
-
 
 Say you pick Firearms and Racketeering/Exortion. If you hover over any dot on the chart, you will see two numbers in parentheses followed by another number, such as this: ```(30, 4) 3.``` In this case that would mean that there are 3 offenders who are 30 year old and have 4 dependents. 
 
@@ -31,7 +30,6 @@ Another version switches dependent number and age.
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/DependMin.png)
 Type "python DependentsMinSentence.py" in terminal, then refresh your browser. 
-
 
 And two other versions relate to whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
 
@@ -62,6 +60,8 @@ A quick numpy max function, ```test["SentenceMonths"].max()``` tells us that the
 
 The Federal Courts handle between 75,000 and 105,000 cases a year. That's a relatively small number: there are more than 8 million state property crimes alone every year. Federal cases tend to be of larger significance. The Constitution or federal law has been violated, the US is a party, federal land is involved or state lines have been crossed. Federal proescutors select the cases. The most common offenses: drug trafficking, immigration, firearms and fraud. 
 
+SDNY prosecutors often maintain a high profile, and have gone on to become governors, Supreme Court justices and even Nobel laureates; famous alums include Rudolph Guliani and Mary Jo White.  
+
 ### Some famous Southern District of NY Cases:
 
 - Injury and loss of life claims from sinking of the Titanic
@@ -85,7 +85,6 @@ Although federal crimes are of great public interest and are often covered in th
 This project began with the goal of creating a library that could be run in Jupyter Notebooks to expose larger trends on a host of variables, everything from demographics to national distribution of offense type to differences between districts and the sentences they tend to impose. One particular question of interest was how judicial and prosecutorial practices changed after the profoundly important 2005 Supreme Court ruling "United States vs Booker." This ruling, authored by Justice Stephen Breyer, granted judges far more discretion in sentencing federal criminals, making sentencing guidelines merely advisory (recommended) rather than mandatory. Judicial discretion is at the heart of the justice system, since justice depends on consistency in sentence for the same crime (with the same criminal history) from court to court.  
 
 As a prototype for this larger project, I have started out by focusing on one of the 94 federal court districts, the Southern District of NY.
-
 
 ### PROCESS 
 
