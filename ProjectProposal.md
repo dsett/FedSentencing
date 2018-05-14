@@ -6,7 +6,7 @@ While the US Commission of Federal Sentencing posts periodic reports on federal 
 
 Federal courts hear fewer cases than state courts but they tend to be of great importance and of public interest. The types of cases they hear are ones where the United States is a party; violations of the Constitution or federal law; crimes on federal land; and bankruptcy cases. Federal courts also hear cases based on state law that involve parties from different states. The types of high profile cases that qualify as federal include the Madoff Ponzi scheme, and cases against the bosses of organized crime bosses such as Gotti and Gambino.
 
-While the public can be privy to the stories behind these high profile crimes in press coverage, there is no tool that allows analysis of the larger trends in federal crime and sentencing, either nationally or by state or other variables. Every year there are between 65,000 and 90,000 reported federal crimes, so the scale of data makes data visualization tools and statistical analysis especially relevant. 
+While the public can be privy to the stories behind these high profile crimes in press coverage, there is no tool that allows analysis of the larger trends in federal crime and sentencing, either nationally or by state or other variables. Every year there are between 75,000 and 105,000 reported federal crimes, so the scale of data makes data visualization tools and statistical analysis especially relevant. 
 
 2.	The data: What is the data you will analyze and where is it from? 
 
