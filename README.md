@@ -4,12 +4,11 @@
 
 The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mobster cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. But apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about offenders and the federal crimes they commit. 
 
-The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible way. The first allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard allow users to scroll through the offense options in the drop down menus. 
+The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible way. The first allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard allow users to scroll through the offense options in the drop down menus. In order to use this app, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/OffenseChart.py")
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dropdown.png)
 
 Say you pick Firearms and Racketeering/Exortion. If you hover over any dot on the chart, you will see two numbers in parentheses followed by another number, such as this: ```(30, 4) 3.``` In this case that would mean that there are 3 offenders who are 30 year old and have 4 dependents. 
-
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/OffenseChart.png)
 
@@ -18,8 +17,6 @@ Some results: gamblers don't tend to have kids, whereas racketeers do. The numbe
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Embezz.png)
 
 One might also pair up white collar crime vs blue collar crime, etc. 
-
-In order to use this app yourself, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/OffenseChart.py")
 
 A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
 
