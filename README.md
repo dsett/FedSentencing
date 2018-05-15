@@ -29,22 +29,11 @@ The minimum number of months served spans the x axis, and along the y axis is th
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/DependMin.png)
 Type "python DependentsMinSentence.py" in terminal, then refresh your browser. 
 
-
-As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
-
-The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
-
 Another version switches dependent number and age. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/AgeMin.png)
 To see this chart app (which has a hover function), type "python AgeMinSentence.py" in terminal and go to http:127.0.0.1:8050/ in your web browser.
 
-
-An earlier version focused just on relation to the guidelines and the length of the sentence:
-
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/EarlierVersion.png)
-
-To see the Guidelines related visualization and use its interactive hover function, type "python Guidelines.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
 
 I also created an app that focused on whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. To run this app, type "python GuidelinesChart.py" in your terminal.
 
@@ -71,7 +60,13 @@ And government sponsored departures from the recommended guidelines for sentence
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/PartialBlue.png)
 
  
+An earlier version focused just on relation to the guidelines and the length of the sentence:
 
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/EarlierVersion.png)
+
+As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
+
+The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
 
 ### BACKGROUND 
 
