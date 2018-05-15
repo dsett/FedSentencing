@@ -35,10 +35,10 @@ app.layout = html.Div([
                 ) for i in df.BOOKER2.unique()
             ],
             'layout': go.Layout(
-                xaxis={'type': 'log', 'title': 'Sentence'},
-                yaxis={'title': 'Criminal history'},
+                xaxis={'type': 'linear', 'title': 'Sentence in Months'},
+                yaxis={'title': 'Criminal history (0 = None, 1 = Some)'},
                 margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
-                legend={'x': 0, 'y': 1},
+                legend={'x': 0, 'y': 5},
                 hovermode='closest'
             )
         }

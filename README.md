@@ -4,9 +4,13 @@
 
 The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mobster cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. But apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about offenders and the federal crimes they commit. 
 
-The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible way. The first allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard allow users to scroll through the offense options in the drop down menus. In order to use this app, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/OffenseChart.py")
+The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible way. In order to use this app, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/both.py")
+
+
+The first interactive chart in at the top allows users to choose two crime types from 32 options in two drop menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard allow users to scroll through the offense options in the drop down menus. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dropdown.png)
+
 
 Say you pick Firearms and Racketeering/Exortion. If you hover over any dot on the chart, you will see two numbers in parentheses followed by another number, such as this: ```(30, 4) 3.``` In this case that would mean that there are 3 offenders who are 30 year old and have 4 dependents. 
 
@@ -18,7 +22,11 @@ Some results: gamblers don't tend to have kids, whereas racketeers do. The numbe
 
 One might also pair up white collar crime vs blue collar crime, etc. 
 
-A second app uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
+A second chart below the first one uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. If you click on the colored dot in the legend, dots of that color will disappear from the chart; click again and that color will appear. You can thus isolate particular elements. 
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Guidelines2.png)
+
+The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/AgeMin.png)
 To see this chart app (which has a hover function), type "python AgeMinSentence.py" in terminal and go to http:127.0.0.1:8050/ in your web browser.
@@ -28,7 +36,18 @@ Another version switches dependent number and age.
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/DependMin.png)
 Type "python DependentsMinSentence.py" in terminal, then refresh your browser. 
 
-And two other versions relate to whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. The relation to the Guidelines is color coded, and the keys are below:  
+
+As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
+
+An earlier version focused just on relation to the guidelines and the length of the sentence:
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/EarlierVersion.png)
+
+To see the Guidelines related visualization and use its interactive hover function, type "python Guidelines.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
+
+I also created an app that focused on whether or not a sentence was within the recommended sentencing guidelines set up by Congress in 1994; whether the offender has a criminal history, and what the length of their sentence was in months. To run this app, type "python GuidelinesChart.py" in your terminal.
+
+The relation to the Guidelines is color coded, and the keys are below:  
 
 Relation to Guidelines:
 - 0= Within Range (the judge imposed a sentence within the range recommended by the guidelines)
@@ -40,17 +59,17 @@ Criminal History:
 - 0 = No Criminal History
 - 1 = Yes, There is Criminal History
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Guidelines2.png)
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/GuidelinesTotal.png)
 
-As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
+If we isolate the red dots, we see that judges only gave offenders with criminal historys sentences that were above the suggested guideline range.
 
-An earlier version focused just on relation to the guidelines and the length of the sentence:
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/PartialRed.png)
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/EarlierVersion.png)
+And government sponsored departures from the recommended guidelines for sentences greater than 92 months (almost 8 years) applied only to offenders with a criminal history.
 
-To see the Guidelines related visualization and use its interactive hover function, type "python Guidelines.py" in your terminal and then refresh your local host at the same address listed above, http:127.0.0.1:8050/  
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/PartialBlue.png)
 
-A quick numpy max function, ```test["SentenceMonths"].max()``` tells us that the maximum sentence is 1320 months, or 110 years. Interactive histograms would also be helpful here, a future addition to come. 
+ 
 
 
 ### BACKGROUND 
