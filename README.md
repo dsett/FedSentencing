@@ -51,6 +51,8 @@ Criminal History:
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/GuidelinesTotal.png)
 
+As you can see from the chart, most judges in the Southern District set sentences within the recommended guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
+
 If we isolate the red dots, we see that judges only gave offenders with criminal historys sentences that were above the suggested guideline range.
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/PartialRed.png)
@@ -58,8 +60,6 @@ If we isolate the red dots, we see that judges only gave offenders with criminal
 And government sponsored departures from the recommended guidelines for sentences greater than 92 months (almost 8 years) applied only to offenders with a criminal history.
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/PartialBlue.png)
-
-As you can see from the chart, most judges in the Southern District set sentences either below the recommended guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
 
 
 ### BACKGROUND 
