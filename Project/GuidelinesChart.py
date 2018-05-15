@@ -6,7 +6,14 @@ import plotly.graph_objs as go
 
 app = dash.Dash()
 
-df = pd.read_csv('..Data/NYSouthernDistrictData.csv')
+df = pd.read_csv('/Users/DSetton/Documents/FedSentencing/Data/NYSouthernDistrictData.csv',na_values=[-999])
+
+Guidlinescodedict = {0: "Within Range", 1: "Above Departure", 2:"Govt Sponsored", 
+                     3:"Below Range"}
+
+for key in Guidlinescodedict.keys():
+    df["BOOKER2"].__setitem__(df["BOOKER2"]==key, Guidlinescodedict[key])
+
 
 app.layout = html.Div([
     
@@ -29,7 +36,7 @@ app.layout = html.Div([
             ],
             'layout': go.Layout(
                 xaxis={'type': 'log', 'title': 'Sentence'},
-                yaxis={'title': 'Relation to Sentence Guidelines'},
+                yaxis={'title': 'Criminal history'},
                 margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
                 legend={'x': 0, 'y': 1},
                 hovermode='closest'
