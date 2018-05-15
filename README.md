@@ -59,14 +59,8 @@ And government sponsored departures from the recommended guidelines for sentence
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/PartialBlue.png)
 
- 
-An earlier version focused just on relation to the guidelines and the length of the sentence:
+As you can see from the chart, most judges in the Southern District set sentences either below the recommended guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/EarlierVersion.png)
-
-As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
-
-The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
 
 ### BACKGROUND 
 
@@ -150,7 +144,8 @@ The next step was to learn DASH, testing back and forth to see what different li
 
 I found DASH to be an especially exciting and interactive way of presenting data that also has the advantage of incorporating stylistic features from html and css. Because DASH isn't integrated with Jupyter Notebooks, I wrote the code in Sublime and tested in a local host, which was not as smooth a workflow. Right now that is the downside of DASH. 
 
-There is certainly more to explore. A future stage of this project would allow comparison of Southern District data with other districts such as the Eastern District of NY through a slider function; and yet another version would compare stats in the Southern District over time, specifically for the past 16 years (for the current app, the dataset is 2015 sentences). Many different variables can be explored. And beyond these DASH apps, I would like to create a heat map, and a visualation involving a US map. I also plan to embed the two apps in this project, and future ones, in a website. 
+There is certainly more to explore. A future stage of this project would allow comparison of Southern District data with other districts such as the Eastern District of NY through a slider function; and yet another version would compare stats in the Southern District over time, specifically for the past 16 years (for the current app, the dataset is 2015 sentences). I plan to add statistical functionality, for example adding probabilities (logits) for the criminal history chart app, and for other binaries such as US Citizen or not, and male vs female on different offenses. Many different variables can be explored.
+And beyond these DASH apps, I would like to create a heat map, and a visualition involving a US map I also plan to embed the two apps in this project, and future ones, in a website using Heroku. 
 
 
 
