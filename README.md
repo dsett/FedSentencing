@@ -24,20 +24,21 @@ One might also pair up white collar crime vs blue collar crime, etc.
 
 A second chart below the first one uses the dimension of color to convey information as well as data along the x and y axis, and a hover data function. If you click on the colored dot in the legend, dots of that color will disappear from the chart; click again and that color will appear. You can thus isolate particular elements. 
 
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Guidelines2.png)
-
-The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
-
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/AgeMin.png)
-To see this chart app (which has a hover function), type "python AgeMinSentence.py" in terminal and go to http:127.0.0.1:8050/ in your web browser.
-
-Another version switches dependent number and age. 
+The minimum number of months served spans the x axis, and along the y axis is the number of dependents of the offender. The age of the offender is revealed through the color of the dots. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/DependMin.png)
 Type "python DependentsMinSentence.py" in terminal, then refresh your browser. 
 
 
 As you can see from the chart, most judges in the Southern District set sentences either below the recommednded guidelines (purple) or within the guideline range (green). Hovering over the dots, the first number gives you the number of months of the sentence.
+
+The minimum number of months served spans the x axis, and along the y axis is the age of the offenders. The number of dependents is revealed through the color of the dots. 
+
+Another version switches dependent number and age. 
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/AgeMin.png)
+To see this chart app (which has a hover function), type "python AgeMinSentence.py" in terminal and go to http:127.0.0.1:8050/ in your web browser.
+
 
 An earlier version focused just on relation to the guidelines and the length of the sentence:
 
