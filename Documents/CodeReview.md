@@ -3,11 +3,11 @@
 
 1. In reviewing your peer's projects did you find that their README files made it clear what their project is, how to install it, and how to use it? Do you think that your README file does a good job at this?
 
-ChloeHacker: Public Transportation Ridership-- Yes, it was clear: there were links to 4 Jupiter notebooks in the readme that had all the code and outputs. (What a climate change related event meant in terms of ridership could also be more explicitly explained upfront.)
+ChloeHacker: Public Transportation Ridership-- Yes, it was generally clear and organized: there were links to 4 Jupiter notebooks in the readme that had all the code and outputs. The writing could be a little clearer as far as what is meant by climate-change related events and how they might be expected to impact ridership.
 
-Julia: Acoustics in Python -- Yes, it was clear. I had to read it twice, and check out the notebooks, but once I read the notebooks and understood the project, I found that the ReadMe was actually clear. 
+Julia: Acoustics in Python -- Yes, it was clear. I had to read it twice, and check out the notebooks, but once I read the notebooks and understood the project, I found that the ReadMe was actually clear. Perhaps could use a little more exposition.
 
-Mistergroot: Coral Reefs-- This was the clearest of them all. Terrific doumentation throughout this project. 
+Mistergroot: Coral Reefs-- This was the clearest of them all. Terrific doumentation throughout this project. In the ReadMe, I would just suggest including a screenshot of the app.
 
 2. Did your peer have Python scripts in a directory named project, and were you able to understand the structure of the python scripts?
 
@@ -24,7 +24,7 @@ ChloeHacker - Yes, it was very clear, with a lot of comments.
 
 Julia -- Yes, she included notebooks with code and outputs. The visualizations in the notebooks (using pickle, which I never heard of before) were really cool. I understood what she was trying to do, and also how she adjusted her original plan. 
 
-Mistergroot-- The documentation was excellent, the best of the three. Very clearly explained how to clean data, create the bokeh visualization, and then embed/host the app on heroku. Well organized and very clear, with lots of very specific comments and instructions. 
+Mistergroot-- The documentation was excellent, the best of the three. Very clearly explained how to clean data, create the bokeh visualization, and then embed/host the app on heroku. Well organized and lots of very specific comments and instructions. 
 
 
 4. Did you come up with any ideas for improving your own project by reviewing your peer's project directories?
