@@ -1,4 +1,4 @@
-#Final project essay
+# Final project essay
 
 1. Now that you have seen many full research projects saved online as GitHub repositories do you plan to use GitHub for your future projects as a way to store code and data in the cloud and to share your progress with others?
 
