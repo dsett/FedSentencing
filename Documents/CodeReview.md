@@ -7,7 +7,7 @@ ChloeHacker: Public Transportation Ridership-- Yes, it was generally clear and o
 
 Julia: Acoustics in Python -- Yes, it was clear. I had to read it twice, and check out the notebooks, but once I read the notebooks and understood the project, I found that the ReadMe was actually clear. Perhaps could use a little more exposition.
 
-Mistergroot: Coral Reefs-- This was the clearest of them all. Terrific doumentation throughout this project. In the ReadMe, I would just suggest including a screenshot of the app.
+Mistergroot: Coral Reefs-- This was the clearest of them all. Terrific documentation throughout this project. In the ReadMe, I would just suggest including a screenshot of the app.
 
 2. Did your peer have Python scripts in a directory named project, and were you able to understand the structure of the python scripts?
 
@@ -29,4 +29,4 @@ Mistergroot-- The documentation was excellent, the best of the three. Very clear
 
 4. Did you come up with any ideas for improving your own project by reviewing your peer's project directories?
 
-I liked the use of Jupyter Notebooks, which have the output right after the code, and allow for ample annotation. Unfortunately DASH does not run in Jupyter Notebooks, but I would use this technique for other projects as far as documentation (I did use the Jupyter Notebooks for all the data cleaning and prep, pre-DASH). I found Mistergroot's panda data cleaning techniques very helpful as a model. And I also plan to refer to his heroku notebook in the future as well, for hosting my own app -- and also his bokeh notebook, since I may bokeh for a map app as well. I learned the most from his project. 
+I liked the use of Jupyter Notebooks, which have the output right after the code, and allow for ample annotation. Unfortunately DASH does not run in Jupyter Notebooks, but I would use this technique for other projects as far as documentation (I did use the Jupyter Notebooks for all the data cleaning and prep, pre-DASH). I found Mistergroot's panda data cleaning techniques helpful as a model. And I also plan to refer to his heroku notebook in the future as well, for hosting my own app -- and also his bokeh notebook, since I may use bokeh for a map app as well. I learned the most from his project. 
