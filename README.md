@@ -2,7 +2,11 @@
 
 ## An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
-The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers and has also tried major mafia and terrorism cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. Apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about federal offenders and the crimes they commit. The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible and interactive way.
+The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers and has also tried major mafia and terrorism cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. 
+
+![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Cohen.png)
+
+Apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about federal offenders and the crimes they commit. The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible and interactive way.
 
 In order to use this app, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. If this command does not work from your location, you can try "python Project/both.py".
 
@@ -78,8 +82,6 @@ SDNY prosecutors often maintain a high profile, and have gone on to become gover
 - White collar crime: Bess Myerson, Leona Helmsley Martha Stewart
 
 And more recently, Trump's lawyer Michael Cohen, and the Deflategate controversy concerning NFL's Tom Brady  
-
-![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Cohen.png)
 
 ### PROBLEM ADDRESSED
 
