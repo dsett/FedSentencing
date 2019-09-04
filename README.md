@@ -2,11 +2,11 @@
 
 ## An Interactive Visualization Tool for Federal Offender & Sentencing Data 
 
-The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers, not to mention multiple big mafia cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. But apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about federal offenders and the crimes they commit. 
+The Fed Criminals App offers insight into larger trends and patterns in the people and kinds of federal crimes tried in the Southern District of New York. One of the most influential and active federal district courts in the country, the SDNY has jurisdiction over New York's major financial centers and has also tried major mafia and terrorism cases. Cases brought by SDNY prosecutors include those against Bernie Madoff, John Gotti and Michael Cohen. Apart from press coverage of such high profile cases, the general public has had little access to comprehensive data about federal offenders and the crimes they commit. The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible and interactive way.
 
-The Fed Criminals App seeks to address that lack of information through several easy to use chart apps that present data in an accessible way. In order to use this app, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. (If this command does not work from your location, you can try "python Project/both.py")
+In order to use this app, please clone this repository and then run the app in the terminal with the command "python OffenseChart.py". Then visit http:127.0.0.1:8050/ in your web browser. If this command does not work from your location, you can try "python Project/both.py".
 
-The first interactive chart, at the top, allows users to choose two crime types from 32 options in two drop down menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard enable users to scroll through the offense options in the drop down menus. 
+Once you run the app, the first interactive chart at the top of the screen allows users to choose two crime types from 32 options in two drop down menus, and then compare the age and number of dependents of offenders on the selected crimes. Arrows on the keyboard enable users to scroll through the offense options in the drop down menus. 
 
 ![Add image](https://raw.githubusercontent.com/drs22Col/FedSentencing/master/Images/Dropdown.png)
 
